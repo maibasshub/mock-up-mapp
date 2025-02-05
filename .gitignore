@@ -1,0 +1,28 @@
+# Node.js / npm / Yarn関連
+node_modules/
+yarn.lock
+package-lock.json
+
+# Ruby / Rails 関連
+vendor/
+log/
+tmp/
+.bundle/
+db/*.sqlite3
+db/*.sqlite3-journal
+
+# 環境変数や認証情報
+.env
+.env.local
+.env.production
+.env.test
+
+# OS / エディタ関連
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+
+# Docker関連（後から追加する場合）
+docker/logs/
+docker/data/
