@@ -9,6 +9,7 @@ import {
 
 // components
 import { GeoPoints } from './containers/GeoPoints';
+import { MainMap } from './containers/MainMap';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           path="/geo_points">
           <GeoPoints />
         </Route>
+      </Switch>
+      <Switch>
+        <MainMap />
       </Switch>
     </Router>
   );
