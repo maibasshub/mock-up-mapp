@@ -9,7 +9,7 @@ import {
 
 // components
 import { GeoPoints } from './containers/GeoPoints';
-import { MainMap } from './containers/MainMap';
+import { MainMap } from './components/maps/MainMap';
 
 function App() {
   return (
