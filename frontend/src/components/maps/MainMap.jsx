@@ -10,6 +10,9 @@ import { MapInitFetcher } from "./MapInitFetcher";
 export const MainMap = () => {
   const [geoPoints, setGeoPoints] = useState([]);
 
+  // 初期座標として東京駅の座標をひとまず使うこととする
+  const tokyo_station = [35.6813, 139.767066];
+
   const fetchPointsWithinBounds = (bounds) => {
     // 表示する地図の座標をparamsとしてrailsに送る
     const params = new URLSearchParams({
@@ -40,7 +43,7 @@ export const MainMap = () => {
   };
 
   return (
-    <MapContainer center={[40.0, 30.0]} zoom={5} style={{ height: "500px", width: "100%" }}>
+    <MapContainer center={tokyo_station} zoom={12} style={{ height: "500px", width: "100%" }}>
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
